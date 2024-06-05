@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Overpass&family=PT+Sans+Narrow&family=Source+Sans+Pro&display=swap');
+
+
+/*
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Overpass', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+*/
+
+.footer-content{
+    padding: 80px 0 80px 0;
+    font-family: 'Overpass', sans-serif;
+    background: -webkit-linear-gradient(rgba(14, 13, 13, 0.815), rgba(31, 31, 31, 0.815)), url(../images/footer.jpg);
+    color: white;
+    background-position: center;
+    background-size: cover;
+}
+.footer-content .footer-grid{
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(250px, auto);
+    grid-gap: 1rem;
+    grid-template-areas: "a b c d";
+    padding: 45 45 45 45;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.footer-item1{
+    grid-area: a;
+}
+.footer-item2{
+    grid-area: b;
+}
+.footer-item3{
+    grid-area: c;
+}
+.footer-item4{
+    grid-area: d;
+}
+.footer-item1  .title, .footer-item2  .title, .footer-item3  .title, .footer-item4 .title{
+    text-align: center;
+    font-size: 30px;
+}
+.footer-item1 .body, .footer-item2 .body, .footer-item3 .body, .footer-item4 .body{
+    margin-top: 20px;
+}
+.footer-item1 .footer-logo{
+    width: 150px;
+    height: 120px;
+    border: 5px solid white;
+}
+.footer-item2 ul li, .footer-item3 ul li{
+    list-style-type: none;
+    font-size: 18px;
+    margin: 10px 0 10px 0;
+}
+.footer-item2  ul li a, .footer-item3 ul li a{
+    color: white;
+}
+.footer-item4 .body{
+    font-size: 18px;
+}
+.footer-hr{
+    border-top: 1px solid white;
+}
+.footer-copy{
+    text-align: center;
+}
+.nav-content{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(98, 144, 243);
+    color: white;
+}
+.nav-content .title{
+    padding-top: 20px;
+    font-size: 20px;
+}
+.nav-content .login-nav{
+    margin-left: 77%;
+    margin-top: -30px;
+    width: 205px;
+}
+.login-btn{
+    padding: 5px 15px 5px 15px;
+    border: none;
+    color: white;
+    background-color: rgb(151, 61, 235);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px white;
+    transition: 0.5s all;
+}
+.login-btn:hover{
+    background-color: rgb(123, 8, 231);
+    cursor: pointer;
+}
+.footer-page{
+    text-align: center;
+    background-color: rgb(233, 233, 233);
+    border-top: 1px solid rgb(207, 207, 207);
+    height: 40px;
+    padding: 5px 0 5px 0;
+}
+.login-card{
+    margin: 50px 100px 50px 100px;
+}
+.login-card-body{
+    padding: 40px;
+}
+.form-input{
+    height: 45px;
+}
+.login-btn-form{
+    margin-top: 25px;
+    height: 50px;
+    width: 25%;
+}
+.waiting-content{
+    margin: 100px 0 100px 0;
+}
+.waiting-card{
+    margin: 0 100px 0 100px;
+}
+.forget-pass{
+    margin: 100px 0 100px 0;
+}
+.verify-otp{
+    margin: 100px 0 100px 0;
+}
+.update-pass-content{
+    margin: 100px 0 100px 0;
+}
+/* 
+    ***************************************************************************************
+
+                             commen laptop screen and small screens
+
+                                            769px - 1400px
+
+    ***************************************************************************************
+*/
+
+@media only screen and (min-device-width: 821px) and (max-device-width: 1400px) {
+
+}
+
+/* 
+    ***************************************************************************************
+
+                                        iPads, Tablets
+
+                                        481px — 768px
+
+    ***************************************************************************************
+*/
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 820px) {
+    .footer-content .footer-grid{
+        display: grid;
+        width: 100%;
+        height: auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(250px, auto);
+        grid-gap: 1rem;
+        grid-template-areas: "a b" "c d";
+        padding: 45 45 45 45;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .nav-content .login-nav{
+        margin-left: 73%;
+        margin-top: -30px;
+        width: 205px;
+    }
+}
+
+/* 
+    ***************************************************************************************
+
+                                     commen mobile screen
+
+                                            320x480
+
+    ***************************************************************************************
+*/
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .footer-content .footer-grid{
+        display: grid;
+        width: 100%;
+        height: auto;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(250px, auto);
+        grid-gap: 1rem;
+        grid-template-areas: "a" "b" "c" "d";
+        margin-top: 40px;
+        margin-bottom: 20px;
+
+    }
+
+    .footer-item1 .body {
+        margin-top: 20px;
+        text-align: center;
+        position: relative;
+    }
+    .footer-item2 .body, .footer-item3 .body{
+        margin-top: 20px;
+        text-align: center;
+        position: relative;
+        left: -100px;
+        padding-left: 150px;
+    }
+    .footer-item4 .body{
+        font-size: 20px;
+        margin-left: 40px;
+    }
+    .footer-item1  .title, .footer-item2  .title, .footer-item3  .title, .footer-item4 .title{
+        text-align: center;
+        font-size: 30px;
+    }
+    .nav-content .login-nav{
+        margin-left: 42%;
+        margin-top: -30px;
+    }
+}
